@@ -57,8 +57,17 @@ form button:hover {
     width: 50%;
 }
 
+.both {
+    display: flex;
+}
+
+.list:nth-of-type(2) {
+    margin-left: 300px;
+}
+
 .list ul li {
     margin: 20px 0;
+    list-style: none;
 }
 
 .list button {

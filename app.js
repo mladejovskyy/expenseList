@@ -2,6 +2,7 @@ const form = document.getElementById('expenses-form');
 const expenseList = document.getElementById('name');
 const expensePrice = document.getElementById('price');
 const expensesList = document.getElementById('expenses-list');
+const expensesPriceList = document.getElementById('expensesPrice-list')
 
 let total = 0;
 
@@ -17,6 +18,11 @@ function addTotal() {
 
     const counter = document.querySelector('#counter')
     counter.textContent = '$' + total;
+
+    //create 'li' element
+    const li = document.createElement('li')
+    li.innerText = expensePrice.value;
+    expensesPriceList.appendChild(li);
 
     expensePrice.value = '';
 }
